@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>azontoghost - Portfolio & CV</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #34495e;
+            --accent-color: #3498db;
+            --text-color: #333;
+            --bg-color: #f8f9fa;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 4rem 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .avatar {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+            border: 4px solid var(--accent-color);
+            display: none; /* Hidden until loaded */
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #bdc3c7;
+            margin-bottom: 1.5rem;
+        }
+
+        .social-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            padding: 8px 16px;
+            border: 1px solid white;
+            border-radius: 4px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .social-links a:hover {
+            background-color: white;
+            color: var(--primary-color);
+        }
+
+        main {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        section {
+            background: white;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        h2 {
+            color: var(--secondary-color);
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 0.5rem;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 1rem;
+        }
+
+        .skill-item {
+            background-color: var(--bg-color);
+            padding: 0.8rem;
+            text-align: center;
+            border-radius: 4px;
+            font-weight: 500;
+        }
+
+        .project-card {
+            margin-bottom: 1.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid #eee;
+        }
+
+        .project-card:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .project-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .project-links a {
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: 500;
+            margin-right: 1rem;
+        }
+
+        .project-links a:hover {
+            text-decoration: underline;
+        }
+        
+        .loading, .no-projects {
+            text-align: center;
+            color: #7f8c8d;
+            font-style: italic;
+        }
+
+        .experience-item {
+            margin-bottom: 1.5rem;
+        }
+        
+        .experience-item h3 {
+            color: var(--primary-color);
+        }
+        
+        .experience-item .date {
+            color: #7f8c8d;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .tag {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: white;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 0.8rem;
+            margin-right: 5px;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                padding: 3rem 1rem;
+            }
+            main {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img id="profile-avatar" class="avatar" src="" alt="Profile Picture">
+        <h1 id="profile-name">azontoghost</h1>
+        <p id="profile-bio">Software Developer | Open Source Enthusiast</p>
+        <div class="social-links">
+            <a href="https://github.com/azontoghost" target="_blank">GitHub</a>
+            <a href="#" target="_blank">LinkedIn</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p id="about-text">
+                Hello! I am a passionate software developer dedicated to building elegant, efficient, and user-friendly solutions. 
+                I enjoy learning new technologies and exploring different aspects of software engineering. 
+                I am currently showcasing my work through my open-source projects on GitHub.
+            </p>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <p>Highlights of technologies and tools I work with:</p>
+            <br>
+            <div class="skills-grid" id="skills-container">
+                <div class="skill-item">HTML & CSS</div>
+                <div class="skill-item">JavaScript</div>
+                <div class="skill-item">Python</div>
+                <div class="skill-item">Git & GitHub</div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>GitHub Projects</h2>
+            <div id="projects-container">
+                <p class="loading">Loading projects from GitHub...</p>
+            </div>
+        </section>
+
+        <section id="experience">
+            <h2>Experience / Education</h2>
+            
+            <div class="experience-item">
+                <h3>Open Source Contributor</h3>
+                <div class="date">Present</div>
+                <ul>
+                    <li>Actively building and maintaining projects on GitHub.</li>
+                    <li>Collaborating with the developer community and learning modern software engineering practices.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year">2024</span> azontoghost. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+        
+        const username = 'azontoghost';
+        
+        // Fetch User Profile
+        fetch(`https://api.github.com/users/${username}`)
+            .then(response => response.json())
+            .then(data => {
+                if (data.name) {
+                    document.getElementById('profile-name').textContent = data.name;
+                }
+                if (data.bio) {
+                    document.getElementById('profile-bio').textContent = data.bio;
+                    document.getElementById('about-text').textContent = data.bio;
+                }
+                if (data.avatar_url) {
+                    const avatar = document.getElementById('profile-avatar');
+                    avatar.src = data.avatar_url;
+                    avatar.style.display = 'block';
+                }
+            })
+            .catch(error => console.error('Error fetching user data:', error));
+
+        // Fetch User Repositories
+        fetch(`https://api.github.com/users/${username}/repos?sort=updated&per_page=10`)
+            .then(response => response.json())
+            .then(repos => {
+                const container = document.getElementById('projects-container');
+                container.innerHTML = ''; // Clear loading text
+                
+                if (repos.length === 0) {
+                    container.innerHTML = '<p class="no-projects">No public repositories found yet. Check back later!</p>';
+                    return;
+                }
+                
+                // Track unique languages for skills section
+                const languages = new Set();
+                
+                repos.forEach(repo => {
+                    // Skip forks if you only want original projects
+                    // if (repo.fork) return; 
+                    
+                    if (repo.language) {
+                        languages.add(repo.language);
+                    }
+                    
+                    const card = document.createElement('div');
+                    card.className = 'project-card';
+                    
+                    let langTag = repo.language ? `<span class="tag">${repo.language}</span>` : '';
+                    
+                    card.innerHTML = `
+                        <h3>${repo.name}</h3>
+                        ${langTag}
+                        <p>${repo.description || 'No description provided.'}</p>
+                        <br>
+                        <div class="project-links">
+                            <a href="${repo.html_url}" target="_blank">View on GitHub</a>
+                            ${repo.homepage ? `<a href="${repo.homepage}" target="_blank">Live Demo</a>` : ''}
+                        </div>
+                    `;
+                    container.appendChild(card);
+                });
+                
+                // Dynamically update skills if we found any languages
+                if (languages.size > 0) {
+                    const skillsContainer = document.getElementById('skills-container');
+                    languages.forEach(lang => {
+                        // Check if it's already there to avoid duplicates with hardcoded ones
+                        if (!Array.from(skillsContainer.children).some(el => el.textContent === lang)) {
+                            const skillItem = document.createElement('div');
+                            skillItem.className = 'skill-item';
+                            skillItem.textContent = lang;
+                            skillsContainer.appendChild(skillItem);
+                        }
+                    });
+                }
+            })
+            .catch(error => {
+                console.error('Error fetching repos:', error);
+                document.getElementById('projects-container').innerHTML = '<p class="no-projects">Failed to load projects. Please try again later.</p>';
+            });
+    </script>
+</body>
+</html>
