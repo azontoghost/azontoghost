@@ -1,16 +1,25 @@
-## Hi there 👋
+# azontoghost
+**Software Developer | Open Source Enthusiast**
 
-<!--
-**azontoghost/azontoghost** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+[GitHub](https://github.com/azontoghost) | [LinkedIn](#)
 
-Here are some ideas to get you started:
+---
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## About Me
+Hello! I am a passionate software developer dedicated to building elegant, efficient, and user-friendly solutions.
+I enjoy learning new technologies and exploring different aspects of software engineering.
+I am currently showcasing my work through my open-source projects on GitHub.
+
+## Skills
+Highlights of technologies and tools I work with:
+- HTML & CSS
+- JavaScript
+- Python
+- Git & GitHub
+
+## Experience / Education
+
+### Open Source Contributor
+*Present*
+- Actively building and maintaining projects on GitHub.
+- Collaborating with the developer community and learning modern software engineering practices.
