@@ -1,4 +1,4 @@
-# Hi, I'm SA (azontoghost) 👋
+# Hi, I'm SA (azontoghost) 👋🏿
 
 **Scientific researcher and Software developer building elegant, efficient, and user-friendly digital experiences**
 
