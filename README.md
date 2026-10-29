@@ -6,10 +6,10 @@
 
 ---
 ## About Me
-I’m a passionate scientific researcher & software developer dedicated to building elegant, efficient, and user-friendly solutions 
-including web development, open source, and creating practical software that solves real problems. 
-I enjoy learning new technologies and exploring different aspects of software engineering.
-I am currently showcasing my work through my open/close-source projects on GitHub.
+I’m a passionate scientific researcher & software developer 🧑‍🔬💻 dedicated to building elegant, efficient, and user-friendly solutions.
+My work includes web development 🌐, open source 📂, and creating practical software that solves real problems.
+I enjoy learning new technologies 📚 and exploring different aspects of software engineering.
+I am currently showcasing my work through my open/close-source projects on GitHub 🐙.
 
 ## Skills
 Highlights of technologies and tools I work with:
