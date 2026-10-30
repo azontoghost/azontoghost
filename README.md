@@ -41,10 +41,6 @@ Highlights of technologies and tools I work with:
 - LinkedIn: https://linkedin.com
 - Email: nissifycomgh@gmail.com
 
-<p align="left">
-  <img src="https://github-readme-stats.vercel.app/api?username=azontoghost&show_icons=true&theme=dark" />
-</p>
-
 ## Experience / Education
 - Ph.D. Business
 - Ph.D. Environmental Sciences
