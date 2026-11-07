@@ -2,21 +2,24 @@
 
 **Scientific researcher and Software developer building elegant, efficient, and user-friendly digital experiences**
 
-[GitHub](https://github.com/azontoghost) | [LinkedIn](#)
+[![GitHub](https://img.shields.io/badge/GitHub-azontoghost-181717?style=flat&logo=github)](https://github.com/azontoghost)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat&logo=linkedin)](#)
+[![Portfolio](https://img.shields.io/badge/Portfolio-Visit-blue?style=flat&logo=web)](#)
 
 ---
+
 ## About Me
-I’m a passionate scientific researcher & software developer 🧑‍🔬💻 dedicated to building elegant, efficient, and user-friendly solutions.
+I am a passionate scientific researcher & software developer 🧑‍🔬💻 dedicated to building elegant, efficient, and user-friendly solutions.
 My work includes web development 🌐, open source 📂, and creating practical software that solves real problems.
 I enjoy learning new technologies 📚 and exploring different aspects of software engineering.
 I am currently showcasing my work through my open/close-source projects on GitHub 🐙.
 
 ## Skills
 Highlights of technologies and tools I work with:
-- HTML & CSS
-- JavaScript
-- Python
-- Git & GitHub
+
+- **Frontend:** HTML, CSS, JavaScript
+- **Backend / Scripting:** Python
+- **Tools:** Git, GitHub
 
 ## Tech Stack
 ![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
@@ -38,17 +41,16 @@ Highlights of technologies and tools I work with:
 - Learning modern engineering practices
 
 ## Connect
-- LinkedIn: https://linkedin.com
-- Email: nissifycomgh@gmail.com
+- **LinkedIn:** [linkedin.com](#)
+- **Email:** [nissifycomgh@gmail.com](mailto:nissifycomgh@gmail.com)
 
 ## Experience / Education
-- Ph.D. Business
-- Ph.D. Environmental Sciences
-- MSc Sustainable Environment & Energy Systems
-- Self-taught app and web developer
-- Collaborating with the developer community and learning modern software engineering practices.
+- **Ph.D. Business**
+- **Ph.D. Environmental Sciences**
+- **MSc Sustainable Environment & Energy Systems**
 
-## Open Source Contributor
+### Open Source Contributor
 *Present*
 - Actively building and maintaining projects on GitHub.
 - Collaborating with the developer community and learning modern software engineering practices.
+- Self-taught app and web developer.
