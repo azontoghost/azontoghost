@@ -1,0 +1,3 @@
+## 2024-05-24 - Rate limits on public APIs
+**Learning:** Public unauthenticated APIs (like GitHub API) have strict rate limits (e.g., 60 requests/hour). Rapid page loads or testing can easily exhaust this limit, breaking the app temporarily.
+**Action:** Always implement caching (e.g., sessionStorage or localStorage) for data fetched from unauthenticated APIs to minimize redundant network requests and improve performance.
